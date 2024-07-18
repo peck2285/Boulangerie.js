@@ -1,0 +1,4 @@
+...................  container............ 
+        ......div= product details .....   { .. un div image du priduit.. ~ ... infos..}
+        ......div produit de meme category {...h1
+        .... boit des pro}

@@ -1,0 +1,33 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+    overflow-x: hidden; 
+    visibility: visible;
+    transition: all 0.2s linear;
+     /* background: url(../../images/image6.png);  */
+     background: var(--main-color-black);
+     text-transform: capitalize;
+     
+}
+
+
+
+
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+
+.flex{
+
+  display: flex;
+}
+
+
+

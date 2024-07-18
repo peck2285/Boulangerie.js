@@ -1,0 +1,280 @@
+.category-item {
+ 
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  
+
+  
+  .our-Shop {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    color: var(--main-color);
+    text-align: center;
+   
+  }
+
+  .categoryDetailsBox {
+    padding: 2rem 5rem;
+    width: 80%;
+    color: aliceblue;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    
+    .product-details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7rem;
+      flex-wrap: wrap; 
+      width: 100%;
+      
+      
+      
+
+      .product-info {
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+        /* background-color: blue; */
+
+        h2 {
+          padding: 3rem 0;
+          font-weight: bold;
+          font-size: 3rem;
+          /* background-color: aqua; */
+        }
+
+        span {
+          /* margin-bottom: 2rem ; */
+          font-size: 4rem;
+          font-weight: bold;
+        }
+
+        button {
+          color: var(--main-color);
+          background-color: var(--main-color-black);
+          border: 1px solid var(--main-color);
+          /* padding: 1rem; */
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        p {
+          /* margin-top: 2rem; */
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+
+      .product-image {
+        width: 40%;
+        /* background-color: blue; */
+
+        img {
+         width: 100%;
+          border: 2px solid var(--main-color);
+        }
+      }
+    }
+
+    .relative-categori {
+      max-width: 30rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .relative-categori h3 {
+      border: 0.1px solid var(--main-color);
+      padding: 2rem;
+      max-width: 10rem;
+      text-align: center;
+      background-color: var(--main-color-black);
+      font-weight: bold;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+  }
+
+
+}
+
+.shop-category h1 {
+  text-align: center;
+  padding-top: 5rem;
+  color: var(--main-color);
+}
+
+.cta {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 0;
+
+  .addTocart {
+    width: 10rem;
+    border: 0.1 solid black;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    border: 0.2rem solid var(--main-color);
+    cursor: pointer;
+  }
+
+  .quantity {
+  
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    cursor: pointer;
+  }
+}
+
+.categoryDetailsBox h3 {
+  text-align: center;
+  padding: 5rem;
+}
+
+#count{
+  display: none;
+}
+
+
+
+/** cartTab **/
+
+
+.cartModal{
+   
+  
+  display: none;
+  position: fixed;
+  top:10rem;
+   right: 1%;
+  width: 28rem;
+   height: 25rem;
+   background-color: var(--main-color-black);
+   color: var(--main-color);
+  box-shadow: .1rem 1rem 2rem #ccc;
+  z-index: 1000;
+  transition: .5s;
+   border-radius: 1rem;
+  padding: 3rem;
+  /* overflow-y: auto; */
+  
+
+
+  .header-cart{
+
+  border-bottom: 1px solid var(--main-color);
+  padding: 1rem;
+  color: var(--main-color);
+
+  }
+
+ 
+  .cartContents{
+
+   
+     width: 100%;
+     max-height: 15rem;
+     overflow-y: scroll;
+    
+     
+   
+  }
+
+
+}
+
+.btn-control{
+
+        width: 100%;
+        border-radius: 1rem;
+        background-color: var(--main-color-black);
+        color: var(--main-color);
+        margin: 1rem 0;
+        padding: 1.3rem 0;
+        border: .1rem solid var(--main-color);
+          
+     }
+
+
+.cartModal.active {
+  display: block !important;
+
+}
+
+.div{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+
+div{
+
+  display: block;
+  unicode-bidi: isolate;
+}
+
+
+.svg {
+
+  
+  font-size: 5rem;
+}
+
+
+@media(max-width:807px){
+
+  .product-info h2{
+
+          padding: 0 !important;
+          margin: 1.5rem 0;
+          font-weight: bold;
+          font-size: 3rem;
+  }
+
+
+  .product-details{
+
+    gap: 1rem;
+  }
+
+  .product-info{
+
+    text-align: center;
+   margin-top: 0;
+  }
+
+
+  .cta{
+
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .product-image{
+
+    margin-top: 2rem ;
+    /* background-color: blue; */
+  }
+
+
+    .categoryDetailsBox{
+
+      padding: 0 5rem;
+    }
+
+}
